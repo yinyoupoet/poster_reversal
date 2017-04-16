@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>翻转</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body onselectstart="return false;">
+	<div class="wrap" id="wrap">
+		<!-- photo负责平移和定位 -->
+		<div class="photo photo_front" id="photo_{{index}}" onclick="turn(this)">
+		<!-- photo-wrap负责翻转 -->
+			<div class="photo-wrap" >
+				<div class="side side-front">
+					<p class="pic">
+						<img src="img/{{img}}">
+					</p>
+					<p class="caption">{{caption}}</p>
+				</div>
+				<div class="side side-back">
+					<p class="desc">{{desc}}</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src='img/data.js'></script>
+<script type="text/javascript" src='gallery.js'></script>
+</html>
